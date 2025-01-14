@@ -45,6 +45,11 @@ class Student{
         console.log(this.result)
     }
 
+    //Allow to access this where it is declared
+    display = () => {
+        console.log(`Arrow : ${this.fnm}`)
+    }
+
 }
 
 let s1 = new Student(1, 'A', 'P', 'pass')
@@ -52,3 +57,12 @@ let s2 = new Student(2, 'B', 'Q', 'fail')
 
 s1.showData()
 s2.showData()
+s2.display()
+
+// printArrow = () => {
+//         console.log(`printArrow : ${JSON.parse(this.console)}`)
+// }
+
+// console.log(this)
+
+// printArrow()
